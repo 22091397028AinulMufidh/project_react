@@ -1,85 +1,93 @@
-import { Text, Container, ActionIcon, Group, rem } from '@mantine/core';
-import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons-react';
-import { MantineLogo } from '@mantinex/mantine-logo';
-import classes from './FooterLinks.module.css';
-import { IconName } from '@tabler/icons-react';
+import React from 'react';
+import './Footer.jsx';
+import './Footer.css';
+import facebook from './Images/facebook.png';
+import instagram from './Images/instagram.png';
+import twitter from './Images/twitter.png';
+import linkedin from './Images/linkedin.png';
 
-
-const data = [
-  {
-    title: 'About',
-    links: [
-      { label: 'Features', link: '#' },
-      { label: 'Pricing', link: '#' },
-      { label: 'Support', link: '#' },
-      { label: 'Forums', link: '#' },
-    ],
-  },
-  {
-    title: 'Project',
-    links: [
-      { label: 'Contribute', link: '#' },
-      { label: 'Media assets', link: '#' },
-      { label: 'Changelog', link: '#' },
-      { label: 'Releases', link: '#' },
-    ],
-  },
-  {
-    title: 'Community',
-    links: [
-      { label: 'Join Discord', link: '#' },
-      { label: 'Follow on Twitter', link: '#' },
-      { label: 'Email newsletter', link: '#' },
-      { label: 'GitHub discussions', link: '#' },
-    ],
-  },
-];
-
-export function FooterLinks() {
-  const groups = data.map((group) => {
-    const links = group.links.map((link, index) => (
-      Text({
-        key: index,
-        className: classes.link,
-        component: 'a',
-        href: link.link,
-        onClick: (event) => event.preventDefault(),
-      }, link.label)
-    ));
-
-    return (
-      div({ className: classes.wrapper, key: group.title }, [
-        Text({ className: classes.title }, group.title),
-        links,
-      ])
-    );
-  });
-
+const Footer= ()=> {
   return (
-    footer({ className: classes.footer }, [
-      Container({ className: classes.inner }, [
-        div({ className: classes.logo }, [
-          MantineLogo({ size: 30 }),
-          Text({ size: 'xs', c: 'dimmed', className: classes.description }, 'Build fully functional accessible web applications faster than ever'),
-        ]),
-        div({ className: classes.groups }, groups),
-      ]),
-      Container({ className: classes.afterFooter }, [
-        Text({ c: 'dimmed', size: 'sm' }, '© 2020 mantine.dev. All rights reserved.'),
-        Group({ gap: 0, className: classes.social, justify: 'flex-end', wrap: 'nowrap' }, [
-          ActionIcon({ size: 'lg', color: 'gray', variant: 'subtle' }, [
-            IconBrandTwitter({ style: { width: rem(18), height: rem(18) }, stroke: 1.5 }),
-          ]),
-          ActionIcon({ size: 'lg', color: 'gray', variant: 'subtle' }, [
-            IconBrandYoutube({ style: { width: rem(18), height: rem(18) }, stroke: 1.5 }),
-          ]),
-          ActionIcon({ size: 'lg', color: 'gray', variant: 'subtle' }, [
-            IconBrandInstagram({ style: { width: rem(18), height: rem(18) }, stroke: 1.5 }),
-          ]),
-        ]),
-      ]),
-    ])
-  );
+    <div className='footer'>
+      <div className='sb__footer section__padding'>
+        <div className='sb__footer-links'>
+          <div className='sb__footer-links-div'>
+            <h4>Course Level</h4>
+              <a href="/employer">
+                  <p>Beginner</p>
+              </a>
+              <a href="/helathplan">
+                  <p>Professional</p>
+              </a>
+              <a href="/individual">
+                  <p>Advanced</p>
+              </a>
+              <a href="/individual">
+                  <p>Expert</p>
+              </a>
+          </div>
+          <div className='sb__footer-links-div'>
+            <h4>Resource</h4>
+              <a href="/employer">
+                  <p>Resource center</p>
+              </a>
+              <a href="/helathplan">
+                  <p>Testimonials</p>
+              </a>
+              <a href="/individual">
+                  <p>Community</p>
+              </a>
+          </div>
+          <div className='sb__footer-links-div'>
+            <h4>Partners</h4>
+                <a href="/employer">
+                    <p>Swings Tech</p>
+                </a>
+          </div>
+          <div className='sb__footer-links-div'>
+            <h4>Company</h4>
+                <a href="/employer">
+                    <p>About</p>
+                </a>
+                <a href="/employer">
+                    <p>Event</p>
+                </a>
+                <a href="/employer">
+                    <p>Career</p>
+                </a>
+                <a href="/employer">
+                    <p>Contact</p>
+                </a>
+          </div>
+          <div className='sb__footer-links-div'>
+              <h4>Social Media</h4>
+              <div className='socialmedia'>
+                  <p><img className='w-8 h-8' src={facebook} alt="" /></p>
+                  <p><img className='w-8 h-8' src={twitter} alt="" /></p>
+                  <p><img className='w-8 h-8' src={instagram} alt="" /></p>
+                  <p><img className='w-8 h-8' src={linkedin} alt="" /></p>
+                  
+              </div>
+          </div>
+        </div>
+
+        <hr />
+        <div className='sb__footer-below'>
+            <div className='sb__footer-copyright'>
+              <p>
+                @{new Date().getFullYear()} All right reserved.
+              </p>
+            </div>
+            <div className='sb__footer-below-links'>
+                <a href="terms"><div><p>Terms & condition</p></div></a>
+                <a href="terms"><div><p>Privacy & Policy</p></div></a>
+                <a href="terms"><div><p>Security</p></div></a>
+                <a href="terms"><div><p>Cookies</p></div></a>
+            </div>
+        </div>
+      </div>
+    </div>
+  )
 }
 
-export default Footer
+export default Footer;
