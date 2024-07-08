@@ -1,10 +1,10 @@
 import React from 'react';
 import './Footer.jsx';
 import './Footer.css';
-import facebook from './Images/facebook.png';
-import instagram from './Images/instagram.png';
-import twitter from './Images/twitter.png';
-import linkedin from './Images/linkedin.png';
+import facebook from '../Images/facebook.png';
+import instagram from '../Images/instagram.png';
+import twitter from '../Images/twitter.png';
+import linkedin from '../Images/linkedin.png';
 
 const Footer= ()=> {
   return (
@@ -75,7 +75,7 @@ const Footer= ()=> {
         <div className='sb__footer-below'>
             <div className='sb__footer-copyright'>
               <p>
-                @{new Date().getFullYear()} All right reserved.
+                &copy; {new Date().getFullYear()} All Right Reserved.
               </p>
             </div>
             <div className='sb__footer-below-links'>

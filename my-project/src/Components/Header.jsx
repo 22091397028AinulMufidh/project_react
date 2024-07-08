@@ -1,3 +1,4 @@
+import Content from '../Content.jsx'
 import { useState } from 'react'
 import {
   Dialog,
@@ -13,30 +14,36 @@ import {
 import {
   ArrowPathIcon,
   Bars3Icon,
+  BookOpenIcon,
   ChartPieIcon,
   CursorArrowRaysIcon,
+  DocumentIcon,
+  DocumentTextIcon,
   FingerPrintIcon,
+  RectangleGroupIcon,
   SquaresPlusIcon,
+  SwatchIcon,
+  UserGroupIcon,
+  UserIcon,
+  VideoCameraIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 // Dropdown Product
 const products = [
-  { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-  { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-  { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
+  { name: 'Beginner', description: 'Get a basic sign language learning experience', href: '#', icon: DocumentIcon },
+  { name: 'Professional', description: 'Practice skills in using sign language', href: '#', icon: DocumentTextIcon },
+  { name: 'Advanced', description: 'Hone your sign language in the neighborhood', href: '#', icon: SwatchIcon },
+  { name: 'Expert', description: 'Share your experience with everyone', href: '#', icon: RectangleGroupIcon },
 ]
 
 // Dropdown Features
 const features = [
-  { name: 'Feature 1', description: 'Description for feature 1', href: '#', icon: ChartPieIcon },
-  { name: 'Feature 2', description: 'Description for feature 2', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Feature 3', description: 'Description for feature 3', href: '#', icon: FingerPrintIcon },
-  { name: 'Feature 4', description: 'Description for feature 4', href: '#', icon: SquaresPlusIcon },
-  { name: 'Feature 5', description: 'Description for feature 5', href: '#', icon: ArrowPathIcon },
+  { name: 'Training Session', description: 'Learn fast with video', href: 'Content.jsx', icon: VideoCameraIcon },
+  { name: 'Dictionary', description: 'Learn sign language vocabulary', href: '#', icon: BookOpenIcon },
+  { name: 'Comunity', description: 'join a community to share experiences', href: '#', icon: UserGroupIcon },
+  { name: 'Certification', description: 'Improve your skills by pursuing certification', href: '#', icon: SquaresPlusIcon }
 ]
 
 // CTA Bottom
@@ -83,10 +90,11 @@ export default function Example() {
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
+          
           <PopoverGroup className="hidden lg:flex lg:gap-x-12">
             <Popover className="relative">
               <PopoverButton className="flex items-left gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-                Product
+                Course
                 <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
               </PopoverButton>
 
@@ -299,11 +307,10 @@ export default function Example() {
           </div>
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Data to enrich your online business
+            Learn Sign Language Easily and Fun
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-              fugiat veniam occaecat fugiat aliqua.
+            Discover new ways to communicate with deaf and hard of hearing people. Here, we offer interactive and easy-to-understand sign language courses, supported by experienced instructors and comprehensive materials.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a

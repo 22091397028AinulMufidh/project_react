@@ -20,6 +20,7 @@
     width: 100%;
     text-align: left;
     margin-bottom: 2rem;
+    color: rgb(65, 65, 65);
 }
 
 .sb__footer-links h4{
@@ -63,7 +64,9 @@ a{
     margin: 0.5rem 0;
     cursor: pointer;
 }
-
+.sb__footer-links-div p:hover{
+    color: rgb(85, 6, 85);
+}
 .sb__footer-below{
     display: flex;
     flex-direction: row;
