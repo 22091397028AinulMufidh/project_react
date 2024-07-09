@@ -1,4 +1,4 @@
-import Content from '../Content.jsx'
+
 import { useState } from 'react'
 import {
   Dialog,
@@ -40,9 +40,9 @@ const products = [
 
 // Dropdown Features
 const features = [
-  { name: 'Training Session', description: 'Learn fast with video', href: 'Content.jsx', icon: VideoCameraIcon },
+  { name: 'Training Session', description: 'Learn fast with video', href: '/course', icon: VideoCameraIcon },
   { name: 'Dictionary', description: 'Learn sign language vocabulary', href: '#', icon: BookOpenIcon },
-  { name: 'Comunity', description: 'join a community to share experiences', href: '#', icon: UserGroupIcon },
+  { name: 'Community', description: 'join a community to share experiences', href: '#', icon: UserGroupIcon },
   { name: 'Certification', description: 'Improve your skills by pursuing certification', href: '#', icon: SquaresPlusIcon }
 ]
 

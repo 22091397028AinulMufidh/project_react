@@ -4,7 +4,7 @@ import Mid from '../Components/Mid.jsx'
 import Review from '../Components/Review.jsx'
 import Footer from '../Components/Footer.jsx'
 
-const Home = () => {
+function Home() {
     return (
         <>
         <Header/>
