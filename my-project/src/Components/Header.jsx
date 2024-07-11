@@ -32,7 +32,7 @@ import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/
 
 // Dropdown Product
 const products = [
-  { name: 'Beginner', description: 'Get a basic sign language learning experience', href: '#', icon: DocumentIcon },
+  { name: 'Beginner', description: 'Get a basic sign language learning experience', href: '/form', icon: DocumentIcon },
   { name: 'Professional', description: 'Practice skills in using sign language', href: '#', icon: DocumentTextIcon },
   { name: 'Advanced', description: 'Hone your sign language in the neighborhood', href: '#', icon: SwatchIcon },
   { name: 'Expert', description: 'Share your experience with everyone', href: '#', icon: RectangleGroupIcon },
@@ -40,7 +40,7 @@ const products = [
 
 // Dropdown Features
 const features = [
-  { name: 'Training Session', description: 'Learn fast with video', href: '/course', icon: VideoCameraIcon },
+  { name: 'Training Session', description: 'Learn fast with video', href: '/content', icon: VideoCameraIcon },
   { name: 'Dictionary', description: 'Learn sign language vocabulary', href: '#', icon: BookOpenIcon },
   { name: 'Community', description: 'join a community to share experiences', href: '#', icon: UserGroupIcon },
   { name: 'Certification', description: 'Improve your skills by pursuing certification', href: '#', icon: SquaresPlusIcon }
@@ -295,7 +295,7 @@ export default function Example() {
             }}
           />
         </div>
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div className="mx-auto max-w-2xl py-28 sm:py-36 lg:py-28">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
               Announcing our next round of funding.{' '}

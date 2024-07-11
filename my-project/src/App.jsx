@@ -3,6 +3,8 @@ import './App.css'
 import Home from './Pages/Home.jsx'
 import Course from './Pages/Course.jsx'
 import Content from './Pages/Content.jsx'
+import Notfound from './Pages/Notfound.jsx' 
+import Form from './Pages/Form.jsx'
 
 function App() {
 
@@ -12,6 +14,9 @@ function App() {
         <Route path='/' element={<Home/>} />
         <Route path='/course' element={<Course/>} />
         <Route path='/content' element={<Content/>} />
+        <Route path='*' element={<Notfound/>} />
+        <Route path='/form' element={<Form/>} />
+        <Route path='/form' element={<Form/>} />
       </Routes>
     </Router>
   )
